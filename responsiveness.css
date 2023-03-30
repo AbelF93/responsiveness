@@ -24,8 +24,8 @@
 @media (min-width:1024px) {
         body{
             background-color:blue;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 3em;
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            font-size: 3em;  
         }
         #small,#medium{
             visibility: hidden;
