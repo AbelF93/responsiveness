@@ -4,9 +4,8 @@
         background-color:red;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 1em;
-    }
-#medium,#large{
-    visibility: hidden;
+        display:flex;
+        flex-flow: column wrap;
     }
     }
     
@@ -15,19 +14,29 @@
             body{
                 background-color:green;
                 font-family: Georgia, 'Times New Roman', Times, serif;
-                font-size: 2em;
+                font-size: 1em;
+                display: flex;
+                flex-direction: row;
+                
             }
-                #small,#large{
-                    visibility: hidden;
+                #small{
+                    flex:2;
+                }
+                #medium{
+                    flex:1;
+                    max-height: 15%;
+                }
+                #large{
+                   position:absolute;
+                   top:35%;
                 }
         }  
 @media (min-width:1024px) {
         body{
             background-color:blue;
             font-family: Georgia, 'Times New Roman', Times, serif; 
-            font-size: 3em;  
+            font-size: 1em;
+            display: flex;
+            flex-direction: row; 
         }
-        #small,#medium{
-            visibility: hidden;
-            }
         }  
